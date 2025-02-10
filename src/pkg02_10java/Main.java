@@ -34,8 +34,30 @@ public class Main {
         String szo = be.next();
         System.out.println(szo);
         
+        // Konverzió
+        String szam = "12";
+        System.out.println(szam+10);
+        // Integer.parseInt (STRING)
+        // Float.parse...
+        int szamInt = Integer.parseInt(szam);
+        System.out.println(szamInt + 10); //22
+        
+        // implicit
+        int num = 100;
+        double doubleNum = num; // 100,0
+        
+        // Kxplicit - nagyobbról kisebbre --> adatvesztés
+        doubleNum = 100.5; //100.5
+        num = (int) doubleNum; //100
+        System.out.println(num);
+        
+        //String imitábilis
+        String sz1 = "alma";
+        sz1="alma";
+        
         be.close();
         
+        //proba1
     }
     
 }
